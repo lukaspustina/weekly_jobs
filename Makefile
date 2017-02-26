@@ -20,7 +20,7 @@ photo_mount:
 	mount_smbfs //lukas:$(SMB_PW)@kevin/home $(TMP_DIR)
 
 photo_sync: $(TMP_DIR)
-	rsync -avz ~/Pictures/Photos\ Library.photoslibrary Library $(TMP_DIR)
+	-rsync -avz ~/Pictures/Photos\ Library.photoslibrary Library $(TMP_DIR)
 
 photo_umount:
 	-umount $(TMP_DIR)
