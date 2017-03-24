@@ -12,6 +12,7 @@ github: pull_all_repos_from_org.sh
 	cd ~/Documents/src/; $(MY_DIR)/$< user lukaspustina
 	cd ~/Documents/Work/CD/src; $(MY_DIR)/$< org centerdevice
 	cd ~/Documents/Work/CC; $(MY_DIR)/$< org codecentric private
+	cd ~/Documents/Work/Rheinwerk; $(MY_DIR)/$< org rheinwerk public
 
 photo: photo_mount photo_sync photo_umount
 
