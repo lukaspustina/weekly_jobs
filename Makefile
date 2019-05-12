@@ -1,6 +1,6 @@
 .PHONY: github photo photo_mount photo_sync photo_umount clean
 
-SMB_PW = $(shell security find-internet-password -ga $${USER} -w -s KEVIN._smb._tcp.local)
+SMB_PW = $(shell security find-internet-password -ga $${USER} -w -s kevin._smb._tcp.local)
 TMP_DIR = $(shell echo $${TMPDIR}/home-kevin)
 MY_DIR= $(shell echo $${PWD})
 
