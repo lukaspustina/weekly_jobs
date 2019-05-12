@@ -4,7 +4,7 @@ SMB_PW = $(shell security find-internet-password -ga $${USER} -w -s KEVIN._smb._
 TMP_DIR = $(shell echo $${TMPDIR}/home-kevin)
 MY_DIR= $(shell echo $${PWD})
 
-all: github pocket photo
+all: github photo
 
 github: pull_all_repos_from_org.sh
 	cd ~/Documents/src/; $(MY_DIR)/$< user lukaspustina
